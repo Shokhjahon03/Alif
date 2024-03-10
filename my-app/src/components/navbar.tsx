@@ -1,4 +1,7 @@
 'use client'
+
+import { Button } from "flowbite-react"
+
 const Navbar = () => {
   return (
     <>
