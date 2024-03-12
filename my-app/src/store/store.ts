@@ -24,14 +24,14 @@ let produxt= create((set)=>({
             
         }
     },
-    cart:async(id:number)=>{
-        let res=await axios.get(`http://localhost:3000/phones/${id}`)
-        let dat:any=await res.data
-        set((state={all:0,carts:[]})=>({
-            all:state.all+1,
-            carts:state.carts.push({...dat})
-        }))
-    }
+    // cart:async(id:number)=>{
+    //     let res=await axios.get(`http://localhost:3000/phones/${id}`)
+    //     let dat:any=await res.data
+    //     set((state={all:0,carts:[]})=>({
+    //         all:state.all+1,
+    //         carts:state.carts.push({...dat})
+    //     }))
+    // }
 }))
 
 export default produxt
